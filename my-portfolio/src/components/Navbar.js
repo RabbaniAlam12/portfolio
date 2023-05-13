@@ -1,5 +1,5 @@
 import React from 'react'
-import brandLogo from '../BrandLogo.png';
+import brandLogo from '../pictures/BrandLogo.png';
 
 export const Navbar = () => {
   return (

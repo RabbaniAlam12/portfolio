@@ -38,7 +38,7 @@ nav .container-fluid {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 8rem;
+  padding-top: 4rem;
 }
 
 .picture-container {
@@ -63,5 +63,25 @@ nav .container-fluid {
   align-items: center;
   width: 50%;
   color: #fff;
+}
+
+/* Projects */
+
+.projectContainer {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel {
+  width: 30%;
+  height: 10%;
+}
+
+.carousel-caption {
+  background-color: black;
+  opacity: 0.8;
+  
+
 }
 

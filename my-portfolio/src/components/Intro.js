@@ -1,5 +1,5 @@
 import React from 'react'
-import myPic from '../myPic.jpg'
+import myPic from '../pictures/myPic.jpg'
 
 export const Intro = () => {
   return (
