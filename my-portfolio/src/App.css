@@ -4,17 +4,28 @@
 :root {
   --primary-white: #fff;
   --weird-colour: #146C94;
+  --intro-background: #144272;
+  --project-background: #205295;
+  --contact-me-background: #2C74B3;
+  --gitHub-link: #F94A29;
 }
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
-  background-color: #146C94;
+}
+
+h2 {
+  color: #fff;
+}
+
+p {
+  color: #fff;
 }
 
 /* Navbar */
 
 .brandLogo {
-  width: 6rem;
+  width: 4rem;
 }
 
 
@@ -38,14 +49,15 @@ nav .container-fluid {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 4rem;
+  padding: 3rem 0 4rem 0;
+  background-color: var(--intro-background);
 }
 
 .picture-container {
   display: flex;
   justify-content: center;
-  width: 15rem;
-  height: 15rem;
+  width: 22rem;
+  height: 22rem;
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 2rem;
@@ -62,16 +74,38 @@ nav .container-fluid {
   text-align: center;
   align-items: center;
   width: 50%;
-  color: #fff;
 }
 
 /* Projects */
 
-.projectContainer {
-  margin-top: 4rem;
+.project-container {
+  padding: 3rem 0 4rem 0 ;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--project-background);
 }
+.project-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  outline: solid black
+}
+.project-caption {
+  width: 50%;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.project-caption a {
+  color: var(--gitHub-link);
+
+}
+
+.projectHeading {
+  margin-bottom: 2rem;
+}
+
 
 .carousel {
   width: 30%;
@@ -81,7 +115,42 @@ nav .container-fluid {
 .carousel-caption {
   background-color: black;
   opacity: 0.8;
-  
-
+  margin: 0 10%;
 }
+
+/* Contact-Me */
+
+.contactMe-container {
+  background-color: var(--contact-me-background);
+  text-align: center;
+  padding: 3rem 4rem 3rem 4rem;
+}
+
+.contactMe-heading {
+  margin-bottom: 2rem;
+}
+
+.contactMe-container input, .contactMe-container textarea {
+  box-sizing: border-box;
+  border: 0;
+  margin-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.row input{
+  width: 40%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
 
