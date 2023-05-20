@@ -14,6 +14,7 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+
 h2 {
   color: #fff;
 }
@@ -24,13 +25,16 @@ p {
 
 /* Navbar */
 
+.navbar {
+  z-index: 2;
+}
 .brandLogo {
   width: 4rem;
 }
 
 
 nav a.nav-link {
-  letter-spacing: 0.063rem;
+  letter-spacing: 0.065rem;
   cursor: pointer;
 }
 
@@ -38,6 +42,15 @@ nav a.nav-link {
   margin: 0 0.2rem 0 0.2rem;
   color: var(--primary-white);
 }
+
+.navbar-nav > li > a:hover{
+  color: orange;
+}
+
+.navbar-nav > li > a:focus{
+  color: red;
+}
+
 
 nav .container-fluid {
   margin: 0 4.5rem 0 4.5rem;
@@ -51,6 +64,7 @@ nav .container-fluid {
   align-items: center;
   padding: 3rem 0 4rem 0;
   background-color: var(--intro-background);
+
 }
 
 .picture-container {
@@ -61,6 +75,8 @@ nav .container-fluid {
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 2rem;
+  position: relative; 
+  z-index: 1;
 }
 
 .profilePic {
@@ -74,6 +90,8 @@ nav .container-fluid {
   text-align: center;
   align-items: center;
   width: 50%;
+  position: relative; 
+  z-index: 1;
 }
 
 /* Projects */
@@ -84,17 +102,24 @@ nav .container-fluid {
   flex-direction: column;
   align-items: center;
   background-color: var(--project-background);
+  position: relative; 
+  z-index: 1;
 }
+
 .project-description {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  outline: solid black
+  outline: solid black;
+  position: relative; 
+  z-index: 1;
 }
 .project-caption {
   width: 50%;
   text-align: center;
   padding-bottom: 2rem;
+  position: relative; 
+  z-index: 1;
 }
 
 .project-caption a {
@@ -122,16 +147,24 @@ nav .container-fluid {
   background-color: var(--contact-me-background);
   text-align: center;
   padding: 3rem 4rem 3rem 4rem;
+  /* position: relative; 
+  z-index: 1; */
+
 }
 
 .contactMe-heading {
   margin-bottom: 2rem;
+  /* position: relative; 
+  z-index: 1; */
 }
 
 .contactMe-container input, .contactMe-container textarea {
   box-sizing: border-box;
   border: 0;
   margin-bottom: 1rem;
+  width: 100%; /* Set the width to 100% by default */ 
+  /* position: relative; 
+  z-index: 1; */
 }
 
 .row {
@@ -149,6 +182,9 @@ nav .container-fluid {
   align-items: center;
 }
 
-
-
-
+/* Particles */
+#tsparticles {
+  position: relative;
+  background-color: transparent;
+  z-index: 1;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import myPic from '../pictures/myPic.jpg'
 
+
 export const Intro = () => {
   return (
     <div className='intro-container'>
