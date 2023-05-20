@@ -24,20 +24,22 @@ export const Projects = () => {
                     {/* <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button> */} 
                     </div>
                 <div class="carousel-inner">
-                    <a href="https://github.com/RabbaniAlam12/TheImdbProject" target='_blank'>
+                    <a href="https://github.com/RabbaniAlam12/portfolio" target='_blank'>
                         <div class="carousel-item active">
+                            <img src={thisPortfolio} class="d-block w-100 carouselPicture" alt="..."/>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>This Porfolio</h5>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/RabbaniAlam12/TheImdbProject" target='_blank'>
+                        <div class="carousel-item ">
                             <img src={imdbPicture} class="d-block w-100 carouselPicture" alt="..."/>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>The Imdb Project</h5>
                             </div>
                         </div>
                     </a>
-                <div class="carousel-item">
-                    <img src={thisPortfolio} class="d-block w-100 carouselPicture" alt="..."/>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>This Porfolio</h5>
-                    </div>
-                </div>
                 <div class="carousel-item">
                     <img src={moreProjectPicture} class="d-block w-100 carouselPicture" alt="..."/>
                 </div>

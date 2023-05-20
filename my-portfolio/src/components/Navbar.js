@@ -2,9 +2,10 @@ import React from 'react';
 import brandLogo from '../pictures/BrandLogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars} from '@fortawesome/free-solid-svg-icons';
-
+import resume from '../docs/RabbaniAlam_resume.pdf'
 
 export const Navbar = () => {
+
   return (
     <nav class="navbar navbar-expand-lg" style={{backgroundColor: "#0A2647"}}>
         <div class="container-fluid">
@@ -21,7 +22,7 @@ export const Navbar = () => {
                   <a class="nav-link" href="https://github.com/RabbaniAlam12" target='_blank'>GitHub</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Resume</a>
+                  <a class="nav-link" href={resume} target='_blank' rel="noopener noreferrer">Resume</a>
                 </li>
               </ul>
             </div>
